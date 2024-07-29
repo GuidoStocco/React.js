@@ -1,8 +1,13 @@
 const Events = () => {
+
+    const handleMyEvents = () => {
+        console.log("ativou")
+    }
+    
     return(
         <div>
             <div>
-                <button>Clique Aqui!</button>
+                <button onClick={handleMyEvents}>Clique Aqui!</button>
             </div>
         </div>
     );
