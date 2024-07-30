@@ -7,6 +7,7 @@ import City from './assets/city.jpg'
 import ListRender from './components/ListRender';
 import ConditionalRender from './components/ConditionalRender';
 import ShowUserName from './components/ShowUserName';
+import Destructuring from './components/Destructuring';
 
 function App() {
   return (
@@ -23,7 +24,10 @@ function App() {
       <ManageData/>
       <ListRender/>
       <ConditionalRender/>
+      {/* props */}
       <ShowUserName name="Guido"/>
+      {/* destructuring props */}
+      <Destructuring brand="VW" km={10000} color="black"/>
     </div>
   );
 }
