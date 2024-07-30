@@ -1,10 +1,11 @@
-import logo from './logo.svg';
+
 import './App.css';
 import ManageData from './components/ManageData';
 
 // importando imagem com assets
 import City from './assets/city.jpg'
 import ListRender from './components/ListRender';
+import ConditionalRender from './components/ConditionalRender';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       </div>
       <ManageData/>
       <ListRender/>
+      <ConditionalRender/>
     </div>
   );
 }
