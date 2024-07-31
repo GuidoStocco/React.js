@@ -1,10 +1,11 @@
+import MyComponents from "./components/MyComponents";
 
-import './App.css';
 
 function App() {
   return (
     <div className="App">
       <h1>CSS REACT</h1>
+      <MyComponents/>
     </div>
   );
 }
