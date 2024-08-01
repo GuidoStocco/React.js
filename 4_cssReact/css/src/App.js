@@ -1,6 +1,7 @@
 import MyComponents from "./components/MyComponents";
 
 
+
 function App() {
   const redTitle = true;
   return (
@@ -10,6 +11,8 @@ function App() {
       <MyComponents/>
       {/* Classe dinâmica no css */}
       <h2 className={redTitle ? "red-title" : "title"}>classe dinâmica no css</h2>
+      {/* CSS Module */}
+      
     </div>
   );
 }
