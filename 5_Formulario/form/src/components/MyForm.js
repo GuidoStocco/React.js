@@ -14,6 +14,10 @@ const MyForm = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log(name,email)
+
+        // limpando formulário
+        setName("");
+        setEmail("");
     }
         
 
