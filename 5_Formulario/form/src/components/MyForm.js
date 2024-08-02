@@ -7,8 +7,9 @@ const MyForm = () => {
     const[email, setEmail] = useState();
 
     const handleName = (e) => {
-        console.log(e.target.value)
+        setName(e.target.value)
     }
+    console.log(name)
         
     
 
