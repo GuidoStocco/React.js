@@ -9,10 +9,12 @@ import Products from './pages/Products';
 import Navbar from './components/Navbar';
 
 
+
 function App() {
   return (
     <div className="App">
       <h1>Context API</h1>
+      
       <BrowserRouter>
        <Navbar/>
         <Routes>

@@ -4,7 +4,7 @@ import { CounterContext } from "../context/CounterContext"
 
 const Home = () => {
 
-  const [counter] = useContext(CounterContext)
+  const {counter} = useContext(CounterContext)
 
   return (
     <div>
