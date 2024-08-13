@@ -11,7 +11,15 @@ const HookUseState = () => {
         setNome('Guido Stocco');        
     }
     
+    // useState em inputs
+    const [age, setAge] = useState(18);
     
+    // envio de formulario
+    const handleSubmit = (event) => {
+        event.preventDefault();
+
+        console.log(age)
+    }
 
     return(
         <div>
@@ -20,6 +28,14 @@ const HookUseState = () => {
             <p>useState: {nome}</p>        
             <button onClick={mudar}>Mudar Nome</button>   
             <hr/>
+
+            {/* useState em inputs */}
+            <form onSubmit={handleSubmit}>
+                <label htmlFor="age">Digite sua Idade:</label><br/>
+                <input type="text" value={age} name="age" onChange={(e) => setAge(e.target.value)}/>
+                <p>Você tem {age} anos!</p>
+                <input type="submit" value='Enviar' />
+            </form>
         </div>
     )
 };
