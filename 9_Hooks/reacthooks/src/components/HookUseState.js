@@ -18,6 +18,7 @@ const HookUseState = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
 
+        setAge('')
         console.log(age)
     }
 
