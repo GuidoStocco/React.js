@@ -6,6 +6,7 @@ import HookUseRef from "../components/HookUseRef";
 
 //
 import { useContext } from "react";
+import HookCustom from "../components/HookCustom";
 
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
             <p>Valor do context: {contextValue}</p>
             <hr/>
             <HookUseRef/>
+            <HookCustom/>
         </div>
     )
 };
