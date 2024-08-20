@@ -17,7 +17,7 @@ app.post("/createproduct", (req, res) => {
     console.log(name)
     console.log(price)
 
-    
+    res.json({message: `O produto ${name} foi criado com sucesso!`})
 })
 
 
